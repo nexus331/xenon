@@ -9,7 +9,9 @@ local launch = main:addButton():setText("Launch"):setBackground(colors.green):se
 
 launch:onClick(function(self,event,button,x,y)
     if(event=="mouse_click")and(button==1)then
-        shell.execute(fcs.lua)
+        while true do
+            redstone.setOutput("top", not redstone.getOutput("top"))
+        end
     end
 end)
 
