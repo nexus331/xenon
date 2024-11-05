@@ -1,0 +1,8 @@
+shell.run("clear")
+print("BOOTSTRAP.LUA loaded.")
+sleep(1)
+print("Starting Debug Mode..")
+sleep(1)
+print("Loading Firmware....")
+sleep(1)
+shell.run("himars.lua")
