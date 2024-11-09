@@ -3,7 +3,7 @@ local basalt = require("basalt") --> Loads the Basalt framework API
 
 local main = basalt.createFrame():setBackground(colors.black)
 local mainlabel = main:addLabel()
-mainlabel:setText("HIMARS Software v0.1"):setForeground(colors.white)
+mainlabel:setText("Xenon Operating System v0.1"):setForeground(colors.white)
 
 local launch = main:addButton():setText("Launch"):setBackground(colors.green):setSize(10,3):setPosition(30,17)
 
@@ -19,7 +19,7 @@ local debugb = main:addButton():setText("Exit"):setBackground(colors.red):setSiz
 
 debugb:onClick(function(self,event,button,x,y)
     if(event=="mouse_click")and(button==1)then
-        shell.execute("shell")
+        shell.run("srs.lua")
     end
 end)
 
