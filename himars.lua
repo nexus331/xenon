@@ -9,9 +9,7 @@ local launch = main:addButton():setText("Launch"):setBackground(colors.green):se
 
 launch:onClick(function(self,event,button,x,y)
     if(event=="mouse_click")and(button==1)then
-        while true do
-            redstone.setOutput("top", not redstone.getOutput("top"))
-        end
+        shell.execute("srs.lua")
     end
 end)
 
@@ -19,7 +17,7 @@ local debugb = main:addButton():setText("Exit"):setBackground(colors.red):setSiz
 
 debugb:onClick(function(self,event,button,x,y)
     if(event=="mouse_click")and(button==1)then
-        shell.run("srs.lua")
+        shell.execute("shell")
     end
 end)
 
