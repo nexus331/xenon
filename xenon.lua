@@ -9,7 +9,7 @@ local launch = main:addButton():setText("Launch"):setBackground(colors.green):se
 
 launch:onClick(function(self,event,button,x,y)
     if(event=="mouse_click")and(button==1)then
-        shell.execute("srs.lua")
+        shell.execute("rednet-himars.lua")
     end
 end)
 
